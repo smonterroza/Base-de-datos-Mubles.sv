@@ -1,0 +1,62 @@
+INSERT INTO tb_administradores VALUES
+(1, 'oscar', '$2y$10$jIeImBquuAKhQ5o6Pi6eG.q6AhiMdBtHuAg.5yuLxxaniCtSLXS.K', 'oscar', 'daniel', 'john.dodsss@example.com', '99192999');
+
+INSERT INTO tb_categorias VALUES
+(1, 'cocina');
+
+INSERT INTO tb_clientes VALUES
+(1, 'oscar', '$2y$10$HJF9jvvAygfvjrPWDkaG5.YgEceV4wQFUXpARU5ibSAPOrNsdOk8S', 'oscar', 'ramirez', '00000000-2', '2234-3242', 'asdasdasdasdasdasdasdasd', 'Activo', 'eqweqewqewq@gmail.com', '2024-06-07'),
+(6, 'oscar122', '$2y$10$HMbd6EwWz8RMHge23jYOPO7Cl60fgg2OBDXydVabY2htfHMA9ISNS', 'osca daniel', 'ramirez', '00000000-5', '2234-3241', 'asdasdasdasdasdasdasdasd', 'Activo', 'dasdasddasssd@gmail.com', '2024-07-05'),
+(9, 'oscar', '$2y$10$qP7i6B8m87cT3xXEsJIHKO3cAxJqbnqfxGh0JqUvrbLt5HzxGYGpi', 'elmer', 'ramirez', '12345678-9', '2234-7784', '1calleee', 'Activo', 'osdoasodsa@gmail.com', '2024-07-09'),
+(10, 'oscar45', '$2y$10$qVhyNINkfg6pXTMQLkwCOeaJnQi2lsn8J1OteOFy59XV14RhsNfr6', 'oscar', 'ramirez', '12345678-0', '2234-5874', 'dasdsadas sd1', 'Activo', 'oscardanielrdl@gmail.com', '2024-07-10'),
+(11, 'loloo', '$2y$10$eo4mqrVDBPiOjA1dvS/pHehW91Xl64TI/gnH9wK1F07NvlM/yPG3O', 'oscar', 'ramirez', '12345678-5', '2232-5234', 'dkasojdkjc', 'Activo', 'kdjasjdklasdj@gmail.com', '2024-07-11'),
+(14, 'elmer', '$2y$10$CrVcd/I1AVpZ5R6Ou4z6IeX1GmY.ASOeMS4AofIVjP01ta981vZie', 'asdasd', 'sadasdasd', '00000000-9', '2235-3242', 'dsaasdasdas', 'Activo', 'dasdasds23adasd@gmail.com', '2024-07-11');
+
+INSERT INTO tb_colores VALUES
+(1, 'azul');
+
+INSERT INTO tb_detalles_pedidos VALUES
+(1, 3, 36.03, 1, 1),
+(2, 1, 12.01, 1, 2),
+(3, 1, 12.01, 2, 2),
+(4, 1, 128.01, 2, 3),
+(5, 1, 128.01, 4, 3),
+(8, 1, 12.01, 4, 2),
+(9, 2, 24.02, 5, 1),
+(14, 1, 12.01, 5, 2),
+(15, 1, 12.01, 6, 2),
+(16, 1, 12.01, 7, 1),
+(17, 1, 12.01, 8, 1),
+(18, 1, 128.01, 9, 3),
+(19, 1, 128.01, 10, 3),
+(20, 1, 128.01, 11, 3),
+(21, 1, 12.01, 12, 2),
+(23, 1, 12.01, 13, 1),
+(24, 1, 12.01, 13, 2);
+
+INSERT INTO tb_materiales VALUES
+(1, 'madera');
+
+INSERT INTO tb_muebles VALUES
+(1, 'asd', 'adasdasdasdasdsad', 12.01, 0.00, 'disponible', 11, 1, 1, 1, 1, '666368bf03c23.png'),
+(2, 'asdasd', 'dasdasdasda', 12.01, 0.00, 'disponible', 16, 1, 1, 1, 1, '666368d782fb3.png'),
+(3, 'asdas', 'dasdasdasdasd', 128.01, 0.00, 'disponible', 16, 1, 1, 1, 1, '666368ee24ad4.jpg');
+
+INSERT INTO tb_pedidos VALUES
+(1, 'pendiente', '2024-06-07', '2024-06-14', 'asdasdasdasdasdasdasdasd', 1),
+(2, 'pendiente', '2024-06-07', NULL, NULL, 1),
+(3, 'en proceso', '2024-07-05', '2024-07-12', 'asdasdasdasdasdasdasdasd', 6),
+(4, 'pendiente', '2024-07-09', '2024-07-16', 'sadsadas sad sad asd', 9),
+(5, 'pendiente', '2024-07-10', NULL, NULL, 10),
+(6, 'pendiente', '2024-07-10', NULL, NULL, 10),
+(7, 'pendiente', '2024-07-10', NULL, NULL, 10),
+(8, 'pendiente', '2024-07-10', NULL, NULL, 10),
+(9, 'pendiente', '2024-07-10', NULL, NULL, 10),
+(10, 'pendiente', '2024-07-10', NULL, NULL, 10),
+(11, 'pendiente', '2024-07-10', NULL, NULL, 10),
+(12, 'pendiente', '2024-07-10', NULL, NULL, 10),
+(13, 'pendiente', '2024-07-11', NULL, NULL, 11),
+(14, 'en proceso', '2024-07-11', '2024-07-18', 'dsaasdasdas', 14),
+(15, 'en proceso', '2024-07-12', NULL, NULL, 1);
+
+
