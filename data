@@ -1,9 +1,6 @@
 INSERT INTO tb_administradores VALUES
 (1, 'oscar', '$2y$10$jIeImBquuAKhQ5o6Pi6eG.q6AhiMdBtHuAg.5yuLxxaniCtSLXS.K', 'oscar', 'daniel', 'john.dodsss@example.com', '99192999');
 
-INSERT INTO tb_categorias VALUES
-(1, 'cocina');
-
 INSERT INTO tb_clientes VALUES
 (1, 'oscar', '$2y$10$HJF9jvvAygfvjrPWDkaG5.YgEceV4wQFUXpARU5ibSAPOrNsdOk8S', 'oscar', 'ramirez', '00000000-2', '2234-3242', 'asdasdasdasdasdasdasdasd', 'Activo', 'eqweqewqewq@gmail.com', '2024-06-07'),
 (6, 'oscar122', '$2y$10$HMbd6EwWz8RMHge23jYOPO7Cl60fgg2OBDXydVabY2htfHMA9ISNS', 'osca daniel', 'ramirez', '00000000-5', '2234-3241', 'asdasdasdasdasdasdasdasd', 'Activo', 'dasdasddasssd@gmail.com', '2024-07-05'),
@@ -14,6 +11,18 @@ INSERT INTO tb_clientes VALUES
 
 INSERT INTO tb_colores VALUES
 (1, 'azul');
+
+INSERT INTO tb_colores VALUES
+(1, 'azul');
+
+INSERT INTO tb_categorias VALUES
+(1, 'cocina');
+
+INSERT INTO tb_muebles VALUES
+(1, 'asd', 'adasdasdasdasdsad', 12.01, 0.00, 'disponible', 11, 1, 1, 1, 1, '666368bf03c23.png'),
+(2, 'asdasd', 'dasdasdasda', 12.01, 0.00, 'disponible', 16, 1, 1, 1, 1, '666368d782fb3.png'),
+(3, 'asdas', 'dasdasdasdasd', 128.01, 0.00, 'disponible', 16, 1, 1, 1, 1, '666368ee24ad4.jpg');
+
 
 INSERT INTO tb_detalles_pedidos VALUES
 (1, 3, 36.03, 1, 1),
@@ -33,14 +42,6 @@ INSERT INTO tb_detalles_pedidos VALUES
 (21, 1, 12.01, 12, 2),
 (23, 1, 12.01, 13, 1),
 (24, 1, 12.01, 13, 2);
-
-INSERT INTO tb_materiales VALUES
-(1, 'madera');
-
-INSERT INTO tb_muebles VALUES
-(1, 'asd', 'adasdasdasdasdsad', 12.01, 0.00, 'disponible', 11, 1, 1, 1, 1, '666368bf03c23.png'),
-(2, 'asdasd', 'dasdasdasda', 12.01, 0.00, 'disponible', 16, 1, 1, 1, 1, '666368d782fb3.png'),
-(3, 'asdas', 'dasdasdasdasd', 128.01, 0.00, 'disponible', 16, 1, 1, 1, 1, '666368ee24ad4.jpg');
 
 INSERT INTO tb_pedidos VALUES
 (1, 'pendiente', '2024-06-07', '2024-06-14', 'asdasdasdasdasdasdasdasd', 1),
