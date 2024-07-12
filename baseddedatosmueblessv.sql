@@ -5,17 +5,19 @@ USE Mueblessv;
 
 CREATE TABLE tb_clientes (
     id_cliente INT AUTO_INCREMENT PRIMARY KEY,
-	clave_cliente VARCHAR (60) NOT NULL,
+	alias_cliente varchar(30) NOT NULL UNIQUE,
+    clave_cliente VARCHAR(60) NOT NULL,
     nombre_cliente VARCHAR(60) NOT NULL,
     apellido_cliente VARCHAR(60) NOT NULL,
-    dui_cliente VARCHAR(10) NOT NULL,
-	telefono_cliente INT NOT NULL,
+    dui_cliente VARCHAR(10) NOT NULL UNIQUE,
+    telefono_cliente VARCHAR(9) NOT NULL UNIQUE,
     direccion_cliente VARCHAR(80) NOT NULL,
+	estado_cliente enum('Activo','Desactivo') NOT NULL DEFAULT 'Activo',
     correo_cliente VARCHAR(60) NOT NULL,
     fecha_creacion DATE DEFAULT NOW(),
     CONSTRAINT CHK_tbclientes_correo CHECK (correo_cliente REGEXP '^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}$'),
     CONSTRAINT CHK_tbclientes_dui CHECK (dui_cliente REGEXP '^[0-9]{8}-[0-9]{1}$'),
-    CONSTRAINT CHK_tbclientes_telefono CHECK (telefono_cliente >= 1000000 AND telefono_cliente <= 9999999999)
+    CONSTRAINT CHK_tbclientes_telefono CHECK (telefono_cliente REGEXP '^[0-9]{4}-[0-9]{4}$')
 );
 
 
@@ -26,15 +28,17 @@ CREATE TABLE tb_administradores (
     nombre_administrador VARCHAR(60) NOT NULL,
     apellido_administrador VARCHAR(60) NOT NULL,
     coreo_administrador VARCHAR (60) NOT NULL UNIQUE,
-    telefono_administrador INT NOT NULL UNIQUE,
-	CONSTRAINT CHK_tbadministradore_telefono CHECK (telefono_administrador >= 1000000 AND telefono_administrador <= 9999999999),
+    telefono_administrador VARCHAR (9) NOT NULL UNIQUE,
+	CONSTRAINT CHK_tbadministradores_telefono CHECK (telefono_administrador REGEXP '^[0-9]{4}-[0-9]{4}$'),
 	CONSTRAINT FK_tbadministradore_correo CHECK (coreo_administrador REGEXP '^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}$')
 );
+
 
 CREATE TABLE tb_colores (
 	 id_color INT AUTO_INCREMENT PRIMARY KEY,
 	 nombre_color VARCHAR (40) NOT NULL UNIQUE
 );
+
 
 CREATE TABLE tb_materiales (
 	id_material INT AUTO_INCREMENT PRIMARY KEY,
@@ -87,7 +91,7 @@ CREATE TABLE tb_pedidos(
     CONSTRAINT FK_tbclientes_tbpedidos
     FOREIGN KEY (id_cliente)
     REFERENCES tb_clientes(id_cliente),
-    CONSTRAINT FK_tbpedidos_fechapedido CHECK (fecha_entrega < fecha_pedido)
+    CONSTRAINT FK_tbpedidos_fechapedido CHECK (fecha_entrega > fecha_pedido)
 ); 
 
 CREATE TABLE tb_detalles_pedidos (
@@ -130,6 +134,3 @@ CREATE TABLE tb_etiquetas (
     FOREIGN KEY (id_mueble)
     REFERENCES tb_muebles(id_mueble)
 );
-
-
-
