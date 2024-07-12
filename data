@@ -7,7 +7,7 @@ INSERT INTO tb_categorias VALUES
 INSERT INTO tb_clientes VALUES
 (1, 'oscar', '$2y$10$HJF9jvvAygfvjrPWDkaG5.YgEceV4wQFUXpARU5ibSAPOrNsdOk8S', 'oscar', 'ramirez', '00000000-2', '2234-3242', 'asdasdasdasdasdasdasdasd', 'Activo', 'eqweqewqewq@gmail.com', '2024-06-07'),
 (6, 'oscar122', '$2y$10$HMbd6EwWz8RMHge23jYOPO7Cl60fgg2OBDXydVabY2htfHMA9ISNS', 'osca daniel', 'ramirez', '00000000-5', '2234-3241', 'asdasdasdasdasdasdasdasd', 'Activo', 'dasdasddasssd@gmail.com', '2024-07-05'),
-(9, 'oscar', '$2y$10$qP7i6B8m87cT3xXEsJIHKO3cAxJqbnqfxGh0JqUvrbLt5HzxGYGpi', 'elmer', 'ramirez', '12345678-9', '2234-7784', '1calleee', 'Activo', 'osdoasodsa@gmail.com', '2024-07-09'),
+(9, 'perez', '$2y$10$qP7i6B8m87cT3xXEsJIHKO3cAxJqbnqfxGh0JqUvrbLt5HzxGYGpi', 'elmer', 'ramirez', '12345678-9', '2234-7784', '1calleee', 'Activo', 'osdoasodsa@gmail.com', '2024-07-09'),
 (10, 'oscar45', '$2y$10$qVhyNINkfg6pXTMQLkwCOeaJnQi2lsn8J1OteOFy59XV14RhsNfr6', 'oscar', 'ramirez', '12345678-0', '2234-5874', 'dasdsadas sd1', 'Activo', 'oscardanielrdl@gmail.com', '2024-07-10'),
 (11, 'loloo', '$2y$10$eo4mqrVDBPiOjA1dvS/pHehW91Xl64TI/gnH9wK1F07NvlM/yPG3O', 'oscar', 'ramirez', '12345678-5', '2232-5234', 'dkasojdkjc', 'Activo', 'kdjasjdklasdj@gmail.com', '2024-07-11'),
 (14, 'elmer', '$2y$10$CrVcd/I1AVpZ5R6Ou4z6IeX1GmY.ASOeMS4AofIVjP01ta981vZie', 'asdasd', 'sadasdasd', '00000000-9', '2235-3242', 'dsaasdasdas', 'Activo', 'dasdasds23adasd@gmail.com', '2024-07-11');
