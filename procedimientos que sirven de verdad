@@ -204,10 +204,3 @@ BEGIN
 END //
 
 DELIMITER ;
-
-
-
-
-
-
-
